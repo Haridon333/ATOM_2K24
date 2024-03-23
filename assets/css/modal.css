@@ -1,0 +1,458 @@
+@import url("https://fonts.googleapis.com/css2?family=Imprima&family=Nova+Round&family=Poppins&family=Raleway&family=Roboto&family=Shippori+Antique&family=Stoke&display=swap");
+
+/* .w3-modal {
+  position: fixed;
+  z-index: 1;
+  z-index: 9999999;
+} */
+
+.w3-modal-content {
+  overflow: hidden;
+  background-color: #000000;
+  min-height: 500px;
+}
+
+.modal-event-name {
+  color: #e9415a;
+  text-transform: uppercase;
+  font-family: "Nova Round", cursive;
+  font-size: 32px;
+  /* z-index: 9999999; */
+}
+
+.round {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffe3b3;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  /* z-index: 9999999; */
+}
+
+.round-tag {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #e84476;
+  font-size: 19px;
+  /* z-index: 9999999; */
+}
+
+.date {
+  color: #ffd6d6;
+  font-size: 20px;
+  /* z-index: 9999999; */
+}
+
+/* --------accordion------- */
+.accordion {
+  background-color: rgba(0, 0, 0, 0);
+  color: #cd184f;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border: 25px;
+  position: relative;
+  /* text-align: left; */
+  outline: none;
+  font-size: 24px;
+  transition: 0.4s;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Imprima", sans-serif;
+  z-index: 9999999;
+}
+
+.active,
+.accordion:hover {
+  background-color: rgba(000, 000, 000, 0);
+}
+
+.accordion::after {
+  content: "\002B";
+  color: #777;
+  font-size: 25px;
+  font-weight: bold;
+  float: left;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  position: relative;
+  background-color: rgba(6, 6, 6, 0);
+  font-size: 15px;
+  color: #ffd6d6;
+  padding: 0px 50px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  z-index: 9999999;
+}
+.day {
+  font-family: "Poppins", sans-serif !important;
+}
+
+@media only screen and (max-width: 320px) {
+  .panel {
+    position: relative;
+    background-color: rgba(6, 6, 6, 0);
+    font-size: 15px;
+    color: #ffd6d6;
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    z-index: 9999999;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .panel {
+    position: relative;
+    background-color: rgba(6, 6, 6, 0);
+    font-size: 15px;
+    color: #ffd6d6;
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    z-index: 9999999;
+  }
+}
+
+@media only screen and (max-width: 728px) {
+  .panel {
+    position: relative;
+    background-color: rgba(6, 6, 6, 0);
+    font-size: 15px;
+    color: #ffd6d6;
+    padding: 0px 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    text-align: justify;
+    font-family: "Poppins", sans-serif;
+    z-index: 9999999;
+  }
+}
+
+/* -----Register button--------- */
+.btn-7,
+.btn-7 *,
+.btn-7 :after,
+.btn-7 :before,
+.btn-7:after,
+.btn-7:before {
+  border: 0 solid #bdb;
+  box-sizing: border-box;
+}
+
+.btn-7 {
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-appearance: button; */
+  background-color: #ff3737;
+  background-image: none;
+  color: #ffd6d6 !important;
+  cursor: pointer;
+  font-family: roboto;
+  font-size: 100%;
+  font-weight: 900;
+  line-height: 1;
+  margin: 0;
+  /* -webkit-mask-image: -webkit-radial-gradient(45deg, #e84476, #f76caf); */
+  padding: 0;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  z-index: 9999999;
+}
+.btn-7:disabled {
+  cursor: default;
+}
+
+.btn-7:-moz-focusring {
+  outline: auto;
+}
+
+.btn-7 svg {
+  display: block;
+  /* vertical-align: middle; */
+}
+
+.btn-7 [hidden] {
+  display: none;
+}
+
+.btn-7 {
+  border-radius: 99rem;
+  border-width: 2px;
+  /* -webkit-mask-image: none; */
+  overflow: hidden;
+  padding: 0.8rem 3rem;
+  position: relative;
+  top: 100%;
+}
+
+.btn-7 span {
+  mix-blend-mode: screen;
+}
+.btn-7:hover {
+  background-color: #3d0000;
+  color: #ffd6d6;
+}
+.btn-7:before {
+  background: #3d0000;
+  /* opacity: 0.5; */
+  -webkit-clip-path: polygon(
+    0 calc(var(--progress, 100%) / 2),
+    100% calc(var(--progress, 100%) / 2),
+    100% calc(100% - var(--progress, 100%) / 2),
+    0 calc(100% - var(--progress, 100%) / 2)
+  );
+  clip-path: polygon(
+    0 calc(var(--progress, 100%) / 2),
+    100% calc(var(--progress, 100%) / 2),
+    100% calc(100% - var(--progress, 100%) / 2),
+    0 calc(100% - var(--progress, 100%) / 2)
+  );
+  content: "";
+  inset: 0;
+  position: absolute;
+  transition: -webkit-clip-path 0.2s ease;
+  transition: clip-path 0.2s ease;
+  transition: clip-path 0.2s ease, -webkit-clip-path 0.2s ease;
+}
+
+.btn-7:hover:before {
+  --progress: 0%;
+}
+
+.close-container {
+  position: relative;
+  margin: auto;
+  /* width: 50px; */
+  height: 50px;
+  margin-top: 20px;
+  left: 95%;
+  cursor: pointer;
+}
+
+.leftright {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #f25c66;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 30px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #f25c66;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+label {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+/* ------modal close button---------- */
+.close {
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #f76caf;
+}
+
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #f76caf;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 600px) {
+  .close-container {
+    position: relative;
+    margin: auto;
+    /* width: 50px; */
+    height: 50px;
+    margin-top: 20px;
+    left: 86%;
+    cursor: pointer;
+  }
+}
+
+/* Register button */
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 12rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 3rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: 0.625rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #bd0a0a;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #650404;
+}
+
+/* View button */
+.Veiw-btn {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.Veiw-btn:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.Veiw-btn:active {
+  transform: translateY(-1px);
+}
+
+.card-btn {
+  padding: 14px 18px;
+  border-radius: 50px;
+  border: 0;
+  background-color: white;
+  box-shadow: #e9415a;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-size: 12px;
+  transition: all 0.5s ease;
+}
+
+.card-btn:hover {
+  letter-spacing: 3px;
+  background-color: rgba(255, 55, 55);
+  color: #ffd6d6;
+  box-shadow: rgba(255, 55, 55, 0.5);
+}
+
+.card-btn:active {
+  letter-spacing: 3px;
+  background-color: rgba(255, 55, 55);
+  color: #ffd6d6;
+  box-shadow: rgba(255, 55, 55, 0.5);
+  transform: translateY(10px);
+  transition: 100ms;
+}
